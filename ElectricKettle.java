@@ -1,29 +1,29 @@
-class IronBox {
+class ElectricKettle {
 
-    static boolean heatingStatus;
+    static boolean boilingProcess;
 
     static int currentTemperature;
     static int maxTemperature = 100;
     static int minTemperature = 0;
 
-    static boolean pressControl() {
+    static boolean boilSwitch() {
 
-        if (heatingStatus == false) {
-            heatingStatus = true;
-            System.out.println("Iron Box is heating...");
+        if (boilingProcess == false) {
+            boilingProcess = true;
+            System.out.println("Water is boiling...");
         } else {
-            heatingStatus = false;
-            System.out.println("Iron Box is cooling down...");
+            boilingProcess = false;
+            System.out.println("Kettle turned off...");
         }
 
-        return heatingStatus;
+        return boilingProcess;
     }
 
     static void increaseTemperature() {
         System.out.println("increaseTemperature is invoked...");
         System.out.println("number of args : " + 0);
 
-        if (heatingStatus == true) {
+        if (boilingProcess == true) {
             if (currentTemperature < maxTemperature) {
                 currentTemperature = currentTemperature + 10;
                 System.out.println("Current temperature is : " + currentTemperature);
@@ -31,7 +31,7 @@ class IronBox {
                 System.out.println("Maximum temperature reached");
             }
         } else {
-            System.out.println("First turn on the IronBox");
+            System.out.println("First turn on the ElectricKettle");
         }
     }
 
@@ -39,7 +39,7 @@ class IronBox {
         System.out.println("decreaseTemperature is invoked...");
         System.out.println("number of args : " + 0);
 
-        if (heatingStatus == true) {
+        if (boilingProcess == true) {
             if (currentTemperature > minTemperature) {
                 currentTemperature = currentTemperature - 10;
                 System.out.println("Current temperature is : " + currentTemperature);
@@ -47,7 +47,7 @@ class IronBox {
                 System.out.println("Minimum temperature reached");
             }
         } else {
-            System.out.println("First turn on the IronBox");
+            System.out.println("First turn on the ElectricKettle");
         }
     }
 }
