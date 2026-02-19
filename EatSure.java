@@ -165,11 +165,15 @@ class EatSure {
 
         } else if (FoodName == "Veg Pulao") {
             price = 159;
-
-        } else {
+        
+        } else if (FoodName == "Special Veg Thali") {
+             price = 269;
+        }
+        else {
             System.out.println("The Food Name is Not Found.");
         }
 
+        
         return price;
     }
 }
