@@ -219,6 +219,10 @@ class DominosExecutor {
         FoodName = "Classic Cheese Pizza";
         double ref54 = Dominos.getFoodPrice(FoodName);
         System.out.println("The Price of the Food " + FoodName + " is : " + ref54);
+        
+        FoodName = "Paneer Supreme Pizza";
+        double ref55 = Dominos.getFoodPrice(FoodName);
+        System.out.println("The Price of the Food " + FoodName + " is : " + ref55);
 
     }
 }
