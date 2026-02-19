@@ -166,7 +166,11 @@ class Zepto {
         } else if (FoodName == "Frozen Momos") {
             price = 140;
 
-        } else {
+        }else if (FoodName == "Frozen Burger Patty") {
+            price = 180;
+        }
+
+        else {
             System.out.println("The Food Name is Not Found.");
         }
 
